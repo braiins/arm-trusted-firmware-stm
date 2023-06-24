@@ -23,5 +23,5 @@
  * contact us at opensource@braiins.com.
  */
 
-#define DDR_SIZE	0x20000000 /* 512MB */
+#define DDR_SIZE	0x10000000 /* 256MB */
 #include "stm32mp15-fw-config.dts"
