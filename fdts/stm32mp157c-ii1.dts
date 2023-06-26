@@ -40,6 +40,8 @@
 	compatible = "braiins,ii1-stm", "st,stm32mp157";
 
 	aliases {
+		mmc0 = &sdmmc2;     /* eMMC */
+		mmc1 = &sdmmc1;     /* SD card */
 		serial0 = &uart4;
 		serial1 = &usart3;
 		serial2 = &uart5;

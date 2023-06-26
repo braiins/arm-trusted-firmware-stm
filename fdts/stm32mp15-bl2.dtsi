@@ -7,6 +7,7 @@
 #if !(STM32MP_EMMC || STM32MP_SDMMC)
 	aliases {
 		/delete-property/ mmc0;
+		/delete-property/ mmc1;
 	};
 #endif
 

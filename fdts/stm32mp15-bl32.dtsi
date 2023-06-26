@@ -6,6 +6,7 @@
 / {
 	aliases {
 		/delete-property/ mmc0;
+		/delete-property/ mmc1;
 	};
 
 	cpus {
