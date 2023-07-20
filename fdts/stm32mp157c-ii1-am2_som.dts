@@ -33,8 +33,8 @@
 #include <dt-bindings/soc/st,stm32-etzpc.h>
 
 / {
-	model = "Braiins STM32MP157C (ii1) SoM Control Board";
-	compatible = "braiins,ii1-stm", "st,stm32mp157";
+	model = "Braiins STM32MP157C (ii1-am2) SoM Control Board";
+	compatible = "braiins,stm32mp157c-ii1-am2_som", "st,stm32mp157";
 
 	aliases {
 		serial0 = &uart4;

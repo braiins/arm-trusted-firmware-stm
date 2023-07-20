@@ -31,13 +31,13 @@
 
 #include "stm32mp157.dtsi"
 #include "stm32mp15xc.dtsi"
-#include "stm32mp157c-ii1-pinctrl.dtsi"
+#include "stm32mp157c-ii1-am2-pinctrl.dtsi"
 #include "stm32mp15xxab-pinctrl.dtsi"
 #include "stm32mp15-ddr3-1x2Gb-1066-binG.dtsi"
 
 / {
-	model = "Braiins STM32MP157C (ii1) Control Board";
-	compatible = "braiins,ii1-stm", "st,stm32mp157";
+	model = "Braiins STM32MP157C (ii1-am2) Control Board";
+	compatible = "braiins,stm32mp157c-ii1-am2", "st,stm32mp157";
 
 	aliases {
 		mmc0 = &sdmmc2;     /* eMMC */
