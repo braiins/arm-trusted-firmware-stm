@@ -68,8 +68,13 @@
 };
 
 &bsec {
-	board_id: board_id@ec {
-		reg = <0xec 0x4>;
+	board_serial_number: board_serial_number@f0 {
+		reg = <0xf0 0xc>;
+		st,non-secure-otp;
+	};
+
+	miner_hwid: miner_hwid@fc {
+		reg = <0xfc 0xc>;
 		st,non-secure-otp;
 	};
 };
@@ -123,7 +128,8 @@
 		      <&package_otp>,
 		      <&hw2_otp>,
 		      <&pkh_otp>,
-		      <&board_id>;
+		      <&board_serial_number>,
+		      <&miner_hwid>;
 
 	nvmem-cell-names = "cfg0_otp",
 			   "part_number_otp",
@@ -133,7 +139,8 @@
 			   "package_otp",
 			   "hw2_otp",
 			   "pkh_otp",
-			   "board_id";
+			   "board_serial_number",
+			   "miner_hwid";
 };
 
 &pwr_regulators {
