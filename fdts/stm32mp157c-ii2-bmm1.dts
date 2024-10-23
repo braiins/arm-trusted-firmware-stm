@@ -75,6 +75,11 @@
 		reg = <0xfc 0xc>;
 		st,non-secure-otp;
 	};
+
+	wifi_mac_addr: wifi_mac_addr@108 {
+		reg = <0x108 0x8>;
+		st,non-secure-otp;
+	};
 };
 
 &cryp1 {
@@ -128,7 +133,8 @@
 		      <&hw2_otp>,
 		      <&pkh_otp>,
 		      <&board_serial_number>,
-		      <&miner_hwid>;
+		      <&miner_hwid>,
+		      <&wifi_mac_addr>;
 
 	nvmem-cell-names = "cfg0_otp",
 			   "part_number_otp",
@@ -139,7 +145,8 @@
 			   "hw2_otp",
 			   "pkh_otp",
 			   "board_serial_number",
-			   "miner_hwid";
+			   "miner_hwid",
+			   "wifi_mac_addr";
 };
 
 &pwr_regulators {
